@@ -1,0 +1,29 @@
+.Education-block{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
+}
+.Education-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Education-icon{
+    font-size: 1.2em;
+    width: 60px;
+}
+
+.Degree{
+    font-size: 1.2em;
+    /* width: fit-content; */
+    text-align: center;
+}
+
+.College{
+    font-size: 1em;
+    color: lightslategray;
+}

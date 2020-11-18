@@ -1,5 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Syne', sans-serif !important ;
+  --load-time:300ms;
+  --load-time1:calc(var(--load-time)*2);
+  --load-time2:calc(var(--load-time)*3);
+  --load-time3:calc(var(--load-time)*4);
+}
+.App-header{
+  background-color: #656666d3;
+  z-index: 500;
+  height: 7vh;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(229, 226, 226);
+  /* animation: fade-in 1s ease-in-out 100ms forwards; */
+  animation: drop-down 0.4s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.hide{
+  background-color: #656666;
+  height: 7vh;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(229, 226, 226);
+  animation: drop-up 0.4s ease-in-out forwards;
+  opacity: 100;
+  transform: translateY(0%);
+}
+
+.App-body{
+  /* background-color: #ecb430; */
+  /* padding-top: 10vh; */
+  min-height: 400vh;
+  /* position: relative; */
+}
+
+.Initial-page{
+  height: 95vh;
+  /* background-color: rgb(199, 127, 79); */
+  /* background: rgb(180,96,58);
+  background: linear-gradient(135deg, rgba(180,96,58,1) 6%, rgba(252,176,69,1) 56%, rgba(255,255,255,1) 100%); */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  /* border-radius: 0px 0px 20px 20px; */
+
+  background: linear-gradient(200deg, #94c3e0, #0868a3,#0a0a0a);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
 }
 
 .App-logo {
@@ -7,22 +75,257 @@
   pointer-events: none;
 }
 
+.Sandeep-logo-div{
+  margin-left: 18vw;
+  /* overflow: hidden; */
+  animation-name: scale-in;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0.2);
+}
+
+.Sandeep-logo{
+  width: 25vw;
+  /* border: 1px solid black; */
+  /* box-shadow: 2px 2px 10px 1px rgb(46, 46, 46); */
+  /* height: 600px; */
+  border-radius: 1em;
+  /* transform: scale(1.5); */
+  /* object-fit: contain; */
+  /* overflow: hidden; */
+}
+.js-logo{
+  width: 5vw;
+  border-radius: 3em;
+  position: fixed;
+  margin-left: 48vw;
+  animation-name: scale-in-background;
+  animation-duration: 100ms;
+  animation-delay: var(--load-time1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  opacity: 0.3 !important;
+}
+
+.react-logo{
+  width: 5vw;
+  position: absolute;
+  margin: 65vh 36vw;
+  animation-name: scale-in-background;
+  animation-duration: 100ms;
+  animation-delay: var(--load-time1);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+  opacity: 0.4 !important;
+}
+
+.My-description{
+  max-width: 25vw;
+  padding: 0 2vw;
+}
+
+.My-description p{
+  font-size: 2em;
+  font-weight: bolder;
+  color: rgb(248, 248, 248);
+  color: rgba(228, 223, 215, 0.959);
+  
+  /* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* font-size: larger; */
+}
+
+.links-tab{
+  display: flex;
+  flex-direction: column;
+  margin-right: 8vw;
+}
+
+.logos{
+  /* box-shadow: 2px 2px 10px 1px rgb(121, 121, 121); */
+  transition: box-shadow 300ms ease-in;
+  /* animation: logos-animation 1s ease-in; */
+  animation-name: scale-in;
+  animation-duration: var(--load-time);
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+.logos:hover{
+  box-shadow: 2px 3px 10px 1px rgb(255, 255, 255);
+  /* border: 1px solid rgb(95, 95, 91); */
+  cursor: pointer;
+  animation-play-state: initial;
+}
+
+.Linkedin-logo{
+  width: 100px;
+  /* height: 7em; */
+  padding:0 3em;
+  border-radius: 10em ;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  animation-delay: var(--load-time1);
+  /* animation-name: linkedin-animation;
+  animation-delay: var(--load-time);
+  transform: translateX(-1000%); */
+}
+
+
+.Github-logo{
+  width: 100px;
+  /* height: 40px; */
+  padding:0.5em 3em;
+  border-radius: 10em ;
+  margin-top: 1em;
+  z-index: 80;
+  background-color: rgb(255, 255, 255);
+  /* animation-name: github-animation;
+  animation-duration: 300ms;
+  transform: translateX(-150%);
+  opacity: 0; */
+  animation-duration: 300ms;
+  animation-delay: var(--load-time2);
+}
+
+.Resume-logo{
+  min-width: 100px;
+  padding:0.5em 0em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  border-radius: 10em ;
+  animation-delay: var(--load-time1);
+  background-color: rgb(255, 255, 255);
+  color: black;
+ /* animation-name: github-animation;
+  animation-duration: 300ms;
+  transform: translateX(-150%);
+  opacity: 0; */
+  animation-delay: var(--load-time3);
+}
+.Resume-logo p{
+  margin: none !important;
+}
+
+a{
+  text-decoration: none;
+}
+
+@keyframes logos-animation{
+  0%{
+    opacity: 10%;
+  }
+
+  100%{
+    opacity: 100%;
+  }
+}
+
+@keyframes fade-in{
+  0%{
+    opacity:0%;  
+  }
+  /* 40%{
+    opacity:40%;  
+  } */
+  100%{
+    opacity:90%;   
+  }
+}
+@keyframes drop-down{
+  0%{
+    opacity:0%;  
+    transform: translateY(-100%);
+  }
+  
+  100%{
+    opacity:100%; 
+    transform: translateY(0%);
+  }
+}
+@keyframes drop-up{
+  0%{
+    opacity:100%;  
+    transform: translateY(0%);
+  }
+  
+  100%{
+    opacity:0%; 
+    transform: translateY(-100%);
+  }
+}
+@keyframes scale-in{
+  0%{
+    transform: scale(0.1);  
+  }
+  90%{
+    transform: scale(1.1); 
+  }
+  100%{
+    transform: scale(1);  
+  }
+}
+
+
+@keyframes scale-in-background{
+  0%{
+    transform: scale(0.1);  
+  }
+  90%{
+    transform: scale(1.1); 
+  }
+  100%{
+    transform: scale(1);  
+  }
+}
+
+@keyframes linkedin-animation{
+  0%{
+    transform: translateX(-1000%);
+  }
+  50%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes github-animation{
+  0%{
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  
+  100%{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* @media (max-width:500px){
+  .App-body{
+    background-color: #181100;
+  }
+} */
+
+/* @media (orientation:landscape){
+  .App-body{
+    background-color: #e7dab5;
+  }
+} */
 
 .App-link {
   color: #61dafb;
@@ -36,3 +339,90 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 90%}
+  50%{background-position:80% 2%}
+  100%{background-position:0% 80%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 99%}
+  50%{background-position:100% 2%}
+  100%{background-position:0% 99%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 99%}
+  50%{background-position:100% 2%}
+  100%{background-position:0% 99%}
+}
+
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(200deg, rgb(255, 255, 254) 40%, rgb(207, 207, 206) 60%, rgb(236, 234, 234) 20%);
+  background-size: 400% auto;
+  
+  color: rgb(209, 0, 0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 15s linear infinite forwards;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.sandeep{
+  font-family:cursive !important;
+  color:rgb(170, 98, 5) !important;
+  font-size:larger !important;
+  font-weight:bolder !important;
+}
+
+
+/* For mobiles  */
+
+@media (max-width:500px){
+  html{
+    overflow-x: hidden;
+  }
+  .App-body{
+    width: 100vw;
+    background-color: #ffffff;
+  }
+  
+  .Sandeep-logo{
+    width: 70vw;
+    margin-top: 8vh;
+    margin-right: 15vw;
+    border-radius: 1em;
+   
+  }
+
+  .My-description{
+    max-width: 90vw;
+    padding: 0 2vw;
+  }
+  .My-description p{
+    font-size: 1em;
+    font-weight: bolder;
+    color: rgb(248, 248, 248);
+    color: rgba(228, 223, 215, 0.959);
+  }
+
+  .logos{
+    max-width: 80px;
+  }
+
+  .Resume-logo{
+    min-width: 110px;
+    padding:0.5em 1.5em;
+    font-size: 1.3em;
+  }
+ 
+} 
