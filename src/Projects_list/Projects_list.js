@@ -11,7 +11,7 @@ const Projects_list = (props) => {
         let height = window.innerHeight;
         let scroll = window.scrollY;
         let scrollPercentage = scroll / height;
-        console.log(scrollPercentage);
+        // console.log(scrollPercentage);
         if (scrollPercentage >= 0.6) {
             let element1 = document.getElementById('project1details');
             let element2 = document.getElementById('project1logo');
@@ -46,9 +46,9 @@ const Projects_list = (props) => {
     )
 
     return (
-        <div className='Projects-list'>
+        <div className='Projects-list' id='Projects'>
             {/* <p className='Projects-title'> Projects developed </p> */}
-            <div className='Project project1' id='project1'>
+            <div className='Project project1 section' id='Project'>
                 <div className='Margin-left hide' id='project1details'>
                     <p className='Project-title'>Chat App</p>
                     <p className='Project-description'>This is an online video calling platform developed using webRTC technology and react. You can discover people online and make friends and have a video chat with them.</p>
@@ -57,7 +57,7 @@ const Projects_list = (props) => {
                 </div>
                 <img src={chat_app_logo} className='Project-logo  Margin-right hide' id='project1logo' alt='chat-app-logo' />
             </div>
-            <div className='Project project2'>
+            <div className='Project project2 section' id='Project'>
                 <img src={vibe_check_logo} className='Project-logo  Margin-left hide' id='project2logo' alt='chat-app-logo' />
                 <div className='Margin-right hide' id='project2details'>
                     <p className='Project-title'>Vibe check</p>
@@ -65,7 +65,7 @@ const Projects_list = (props) => {
                     <button className='Project-button project-2-button '>Source</button>
                 </div>
             </div>
-            <div className='Project project3'>
+            <div className='Project project3 section' id='Project'>
                 <div className='Margin-left hide' id='project3details'>
                     <p className='Project-title'>Shopping</p>
                     <p className='Project-description'>This is a shopping website where user can browse through various categories of products add them to the cart and checkout by making a payment and receive a confirmation email.</p>

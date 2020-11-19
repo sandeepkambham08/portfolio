@@ -15,49 +15,51 @@ import Projects_list from './Projects_list/Projects_list.js';
 import Contact_form from './Contact_form/Contact_form.js';
 import Skills from './Skills/Skills.js';
 import Education from './Education/Education.js';
+import Experience from './Experience/Experience.js';
 
 let scrollDirection=0;        // To detect scroll direction 
 let scrollPercentage;       // Amount the view is scrolled
+
 
 class App extends Component {
   
 
   render(){
     
-    window.addEventListener("scroll", (event) => {
-      let height = window.innerHeight;
-      let scroll = window.scrollY;
-      scrollPercentage = scroll/height;
-      if(scrollPercentage>1){                           // Don't show header in first screen
-        scrollDirection= scrollPercentage/scrollDirection;
-        if(scrollDirection<1){
-        // console.log(scrollDirection, ' , ', scrollPercentage)
-        document.querySelector('header').classList.add('App-header');
-        document.querySelector('header').classList.remove('hide');
-        }
-        if(scrollDirection>1){
-          // console.log(scrollDirection, ' , ', scrollPercentage)
-          document.querySelector('header').classList.remove('App-header');
-          document.querySelector('header').classList.add('hide');
-          }
-      }
-                           // Don't show header in first screen
-      if(scrollPercentage<=1){
-        document.querySelector('header').classList.remove('App-header');
-        document.querySelector('header').classList.add('hide');
-      }
+  //   window.addEventListener("scroll", (event) => {
+  //     let height = window.innerHeight;
+  //     let scroll = window.scrollY;
+  //     scrollPercentage = scroll/height;
+  //     if(scrollPercentage>1){                           // Don't show header in first screen
+  //       scrollDirection= scrollPercentage/scrollDirection;
+  //       if(scrollDirection<1){
+  //       // console.log(scrollDirection, ' , ', scrollPercentage)
+  //       document.querySelector('header').classList.add('App-header');
+  //       document.querySelector('header').classList.remove('hide');
+  //       }
+  //       if(scrollDirection>1){
+  //         // console.log(scrollDirection, ' , ', scrollPercentage)
+  //         document.querySelector('header').classList.remove('App-header');
+  //         document.querySelector('header').classList.add('hide');
+  //         }
+  //     }
+  //                          // Don't show header in first screen
+  //     if(scrollPercentage<=1){
+  //       document.querySelector('header').classList.remove('App-header');
+  //       document.querySelector('header').classList.add('hide');
+  //     }
       
-      scrollDirection=scrollPercentage; // saving scrollpercentage for next calculation
-  });
+  //     scrollDirection=scrollPercentage; // saving scrollpercentage for next calculation
+  // });
 
   return (
     <div className="App">
-      <header className='hide'>
+      {/* <header className='hide'>
        <p>Sandeep portfolio</p>
-      </header>
+      </header> */}
       <Navigator/>
       <div className="App-body">
-        <div className="Initial-page">
+        <div className="Initial-page section" id='About'>
         {/* {window.addEventListener('scroll', this.checkHeader)} */}
           {/* <div></div> */}
           <div className='Sandeep-logo-div'>
@@ -70,7 +72,7 @@ class App extends Component {
             <p className='linear-wipe'>I am a FRONT-END DEVELOPER who love to develop wide range of applications with simple and clean UI.</p>
           </div>
           <div className='links-tab'>
-          <a href={'https://www.linkedin.com/in/sandeep-reddy-kambham-705905110/'} target="_blank">
+          <a href={'https://www.linkedin.com/in/sandeepkambham08'} target="_blank">
             <img src={linkedin_logo} alt='linkedin_logo' className='Linkedin-logo logos' />
           </a>
           <a href={'https://github.com/sandeepkambham08/'} target="_blank">
@@ -85,6 +87,7 @@ class App extends Component {
         scrollPercentage={scrollPercentage}/>
         <Education/>
         <Skills/>
+        <Experience/>
         <Contact_form />
       </div>
     </div>
@@ -93,3 +96,26 @@ class App extends Component {
 }
 
 export default App;
+
+// const targets = document.querySelectorAll("div.section")
+// console.log(targets);
+
+// // window.addEventListener('DOMContentLoaded', () => {
+//   const lazyload = target => {
+
+//     const io = new IntersectionObserver((entries,observer)=>{
+//       entries.forEach(entry=>{
+//         console.log('Loving ');
+//         if(entry.isIntersecting){
+//           console.log(entry);
+//         }
+//         observer.disconnect();
+//       })
+//     });
+
+//     io.observe(target)
+
+//   }
+//   targets.forEach(lazyload);
+
+

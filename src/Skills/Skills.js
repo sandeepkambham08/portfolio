@@ -5,7 +5,7 @@ import Projects_list from '../Projects_list/Projects_list';
 
 const Skills = () => {
     return (
-        <div>
+        <div className='section' id='Skills'>
             {/* <h1>Skills</h1> */}
             <div className='Skills'>
             {/* <h1>Skills</h1> */}

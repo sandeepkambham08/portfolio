@@ -5,20 +5,50 @@
     position: fixed;
     /* padding: 1em; */
     top: 20vw;
-    border-radius: 1em;
+    border-radius: 1em !important;
+    overflow: hidden;
+    z-index: 700;
 }
 
-.Navigator p{
+.Navigator nav{
     font-size: 1em;
     color: snow;
     font-weight: bolder;
     padding: 1em;
     margin: 0;
     cursor: pointer;
+    overflow: visible;
     /* border: 1px solid white; */
 }
 
-.Navigator p:hover{
+.Navigator nav:hover{
     color: rgb(92, 92, 92);
     
+}
+
+.Active-button{
+    background-color: olivedrab;
+    /* padding: 3em !important; */
+    /* overflow: hidden; */
+}
+
+@media (max-width:500px){
+    .Navigator{
+        margin-left: 1vw;
+        /* padding: 1em; */
+        position: fixed !important;
+        top: 0;
+        border-radius: 1em !important;
+        overflow: hidden;
+    }
+    .Navigator nav{
+        font-size: 0.5em;
+        color: snow;
+        font-weight: bolder;
+        padding: 1em;
+        margin: 0;
+        cursor: pointer;
+        overflow: visible;
+        /* border: 1px solid white; */
+    }
 }

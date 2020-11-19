@@ -1,6 +1,62 @@
 .Contact_form{
-    height: 40vh;
+    min-height: fit-content;
+    height: 80vh;
     background-color: rgba(13, 13, 53, 0.808);
     margin: 2vh 0 0 0;
     color: rgb(235, 235, 220);
+    
 }
+.Mail-icon, .Linkedin-small-icon{
+    width: 60px;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+
+
+.Contact-option a{
+    color: white;
+    text-decoration: none !important;
+    outline: none !important;
+    padding: 1em;
+}
+.Contact-option{
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+}
+
+.Contact-option:hover{
+    opacity: 1;
+}
+
+input,textarea{
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 1em;
+    outline: none;
+    background-color: rgb(170, 170, 170);
+    font-family: 'Syne', sans-serif !important ;
+}
+
+textarea:focus,input:focus{
+    background-color: rgb(250, 250, 250);
+}
+
+.Submit-button{
+    font-size: 1em;
+    padding: 0.5em;
+    outline: none;
+    border-radius: 1em;
+    background-color: rgb(26, 32, 59);
+    color: rgb(124, 124, 124);
+}
+
+.Submit-button:hover{
+    background-color: rgb(51, 63, 117);
+    color: rgb(248, 245, 245);
+}
+
