@@ -17,6 +17,8 @@ import Skills from './Skills/Skills.js';
 import Education from './Education/Education.js';
 import Experience from './Experience/Experience.js';
 
+import resume from './media/Sandeep_kambham_Front_end_Developer.pdf';
+
 let scrollDirection=0;        // To detect scroll direction 
 let scrollPercentage;       // Amount the view is scrolled
 
@@ -72,13 +74,13 @@ class App extends Component {
             <p className='linear-wipe'>I am a FRONT-END DEVELOPER who love to develop wide range of applications with simple and clean UI.</p>
           </div>
           <div className='links-tab'>
-          <a href={'https://www.linkedin.com/in/sandeepkambham08'} target="_blank">
+          <a href={'https://www.linkedin.com/in/sandeepkambham08'} rel="noopener noreferrer" target="_blank">
             <img src={linkedin_logo} alt='linkedin_logo' className='Linkedin-logo logos' />
           </a>
-          <a href={'https://github.com/sandeepkambham08/'} target="_blank">
+          <a href={'https://github.com/sandeepkambham08/'} rel="noopener noreferrer" target="_blank">
             <img src={Github_logo} alt='Github_logo' className='Github-logo logos' />
           </a>
-          <a href={'http://www.hyperlinkcode.com/button-links.php'} target="_blank">
+          <a href={resume} rel="noopener noreferrer" target="_blank">
             <p className="Resume-logo logos">Resume</p>
           </a>
           </div>

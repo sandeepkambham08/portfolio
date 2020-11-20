@@ -7,6 +7,7 @@
     padding: 1vh 15vw;
     /* filter:blur(40px); */
     transition: filter 0.4s ease-in;
+    overflow: hidden;
 }
 
 .Skills-title{
@@ -55,4 +56,101 @@ opacity: 0.3;
         left: 0;
         opacity: 0.15;
         }
+    .circle{
+        display: none;
+    }
+    #Skills p{
+        opacity: 1;
+    }
 }
+
+
+
+
+
+
+
+/* For circles animaiton */
+
+
+.Skills-animation{
+    position: absolute;
+    top: auto;
+    left: 0;
+}
+
+  .circle{
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(73, 73, 73);
+    animation: ripple 15s infinite;
+    box-shadow: 0px 0px 1px 0px #789db8;
+  }
+  
+  .small{
+    width: 5em;
+    height: 5em;
+    left: -2.5em;
+    bottom: -2.5em;
+  }
+  
+  .medium{
+    width: 10em;
+    height: 10em;
+    left: -5em;
+    bottom: -5em;
+  }
+  
+  .large{
+    width: 20em;
+    height: 20em;
+    left: -10em;
+    bottom: -10em;
+  }
+  
+  .xlarge{
+    width: 30em;
+    height: 30em;
+    left: -15em;
+    bottom: -15em;
+  }
+  
+  .xxlarge{
+    width: 40em;
+    height: 40em;
+    left: -20em;
+    bottom: -20em;
+  }
+  
+  .shade1{
+    opacity: 0.2;
+  }
+  .shade2{
+    opacity: 0.5;
+  }
+  
+  .shade3{
+    opacity: 0.7;
+  }
+  
+  .shade4{
+    opacity: 0.8;
+  }
+  
+  .shade5{
+    opacity: 0.9;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: scale(0.8);
+    }
+    
+    50%{
+      transform: scale(1.2);
+    }
+    
+    100%{
+      transform: scale(0.8);
+    }
+  }

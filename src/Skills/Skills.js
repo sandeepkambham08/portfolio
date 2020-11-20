@@ -2,12 +2,14 @@ import React from 'react';
 import './Skills.css';
 import Projects_list from '../Projects_list/Projects_list';
 
-import skills_icon from '../media/skills_icon.png'
+import skills_icon from '../media/skills_icon.png';
+import background from '../media/background.jpg'
 
 const Skills = () => {
     return (
         <div className='Skills section' id='Skills'>
-            <h1 className='Skills-title' >Skills</h1>
+            <h1 className='Skills-title' >Skills</h1>   
+            {/* <img className="Background" src={background}/> */}
             <img className='Skills-icon' src={skills_icon}   />
             <div className='divide'>
                 {/* <h1>Skills</h1> */}
@@ -76,6 +78,13 @@ const Skills = () => {
                     </div>
                 </div>
 
+            </div>
+            <div className='Skills-animation'>
+            <div className='circle xxlarge shade1'></div>
+            <div className='circle xlarge shade2'></div>
+            <div className='circle large shade3'></div>
+            <div className='circle medium shade4'></div>
+            <div className='circle small shade5'></div>
             </div>
         </div>
 

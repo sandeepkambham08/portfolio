@@ -50,6 +50,7 @@ tr{
 .job-role{
     font-size: 1.2em;
     font-weight: bold;
+    padding:1em 0 0.2em 0.5em;
 }
 
 .Worked-years{
@@ -73,11 +74,17 @@ color: slategrey;
 
 @media(max-width:500px){
     .Experience-table{
-        width: 80vw;
+        width: 100vw;
     }
     .Company-logo{
-        width: 30vw;
+        width: 25vw;
         align-items: baseline;
+    }
+    .job-description{
+        min-width: 60vw;
+    }
+    table{
+        margin: 10px !important;
     }
 
 }

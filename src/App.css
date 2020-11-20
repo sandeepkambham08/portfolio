@@ -6,6 +6,7 @@ html{
   text-align: center;
   font-family: 'Syne', sans-serif !important ;
   width: 100vw;
+  overflow-x: hidden;
   --load-time:300ms;
   --load-time1:calc(var(--load-time)*2);
   --load-time2:calc(var(--load-time)*3);

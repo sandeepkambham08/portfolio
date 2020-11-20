@@ -45,13 +45,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const io = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      console.log(`${entry.target.id} is in view ${entry.isIntersecting}  with a ratio of : ${entry.intersectionRatio}`)
+      // console.log(`${entry.target.id} is in view ${entry.isIntersecting}  with a ratio of : ${entry.intersectionRatio}`)
       if (entry.intersectionRatio > 0.8 && window.innerWidth > 500) {
         let id = entry.target.id + '-button';
-        console.log('current screen is ', entry.target.id)
+        // console.log('current screen is ', entry.target.id)
         let Navigator = document.getElementById('Navigator');
         let allButtons = Navigator.getElementsByTagName('nav');
-        console.log(allButtons.length);
+        // console.log(allButtons.length);
         for (var i = 0; i < allButtons.length; i++) {
           allButtons[i].classList.remove('Active-button');
         }
@@ -68,12 +68,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         
       }
-      if (entry.intersectionRatio > 0.5 && window.innerWidth < 500) {
+      if (entry.intersectionRatio > 0.25 && window.innerWidth < 500) {
         let id = entry.target.id + '-button';
-        console.log('current screen is ', entry.target.id)
+        // console.log('current screen is ', entry.target.id)
         let Navigator = document.getElementById('Navigator');
         let allButtons = Navigator.getElementsByTagName('nav');
-        console.log(allButtons.length);
+        // console.log(allButtons.length);
         for (var i = 0; i < allButtons.length; i++) {
           allButtons[i].classList.remove('Active-button');
         }

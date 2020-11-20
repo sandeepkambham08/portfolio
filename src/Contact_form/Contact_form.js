@@ -5,16 +5,16 @@ import emailjs from 'emailjs-com';
 import linkedin_small  from '../media/linkedin_small.jpg'
 import mail from '../media/mail_icon.png';
 
-let error='';
+// let error='';
 
 const onSend = () =>{
     document.getElementById('error').innerHTML=""
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
-    console.log(name, email, message);
+    // console.log(name, email, message);
     if(!name || !email || !message ){
-        console.log('Enter all values')
+        // console.log('Enter all values')
         document.getElementById('error').innerHTML="* Please fill all the fields"
     }
     else{
@@ -52,7 +52,7 @@ const Contact_form = () => {
             {/* <p>You can reach out to me on </p> */}
             <div className='Contact-option' >
             <img src={linkedin_small} alt='linkedin icon' className='Linkedin-small-icon' />
-            <a href={'https://www.linkedin.com/in/sandeepkambham08'} target='_blank'>www.linkedin.com/in/sandeepkambham08</a>
+            <a href={'https://www.linkedin.com/in/sandeepkambham08'} rel="noopener noreferrer" target='_blank'>www.linkedin.com/in/sandeepkambham08</a>
             </div>
           <br></br>
           <br></br>

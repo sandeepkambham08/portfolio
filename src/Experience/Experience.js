@@ -19,17 +19,18 @@ const Experience = () => {
                     <p>Tech Mahindra</p>
                 </div> */}
                 <table className='Experience-table'>
+                    <tbody>
                     <tr>
                         {/* <td className='Company-name'>Amazon</td> */}
                         {/* <td ><img className='Company-logo' src={Amazon_logo}/></td> */}
                         <td></td>
                         <td className='job-role'>Analyst/Developer</td>
-                    </tr>
-                    <br></br>
+                    </tr>        
                     <tr>
-                        <td className='Worked-years'><img className='Company-logo' src={Amazon_logo} />
-                            <br></br>
-                            <br></br>May 2017 - Aug 2018</td>
+                        <td className='Worked-years'>
+                            <img className='Company-logo' src={Amazon_logo} alt='Amazon logo'/>
+                            <p>May 2017 - Aug 2018</p>
+                        </td>
                         <td className='job-description'>
                             I have created userscripts using JavaScript to improve efficiency. 
                             I have developed an add-on form on the website to perform multiple manual updates on a single click,
@@ -45,19 +46,17 @@ const Experience = () => {
                         <td></td>
                         <td className='job-location'>Location: Hyderabad </td>
                     </tr>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <tr>
+
+                    <tr style={{paddingTop:'100px'}}>
                         <td className='Company-name'></td>
                         <td className='job-role'>Software Engineer</td>
                     </tr>
-                    <br></br>
+                   
                     <tr>
-                        <td className='Worked-years'><img className='Company-logo' src={Techm_logo} />
-                            <br></br>
-                            <br></br>
-                        Aug 2016 - Apr 2017</td>
+                        <td className='Worked-years'>
+                        <img className='Company-logo' src={Techm_logo} alt='Tech M logo' />    
+                        <p>Aug 2016 - Apr 2017</p>
+                        </td>
                         <td className='job-description'>
                             Right after my B.Tech, I joined as a software engineer in Tech Mahindra. 
                             Tech Mahindra is a technology company based in India with it's clients around the world. 
@@ -69,6 +68,7 @@ const Experience = () => {
                         <td></td>
                         <td className='job-location'>Location: Hyderabad </td>
                     </tr>
+                    </tbody>
                 </table>
             </div>
 

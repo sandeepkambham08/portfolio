@@ -37,9 +37,10 @@
         margin-left: 1vw;
         /* padding: 1em; */
         position: fixed !important;
-        top: 0;
+        top: 40vh;
         border-radius: 1em !important;
         overflow: hidden;
+        display: none;
     }
     .Navigator nav{
         font-size: 0.5em;

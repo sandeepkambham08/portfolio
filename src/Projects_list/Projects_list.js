@@ -52,8 +52,9 @@ const Projects_list = (props) => {
                 <div className='Margin-left hide' id='project1details'>
                     <p className='Project-title'>Chat App</p>
                     <p className='Project-description'>This is an online video calling platform developed using webRTC technology and react. You can discover people online and make friends and have a video chat with them.</p>
-                    <button className='Project-button Access1'>Access</button>
-                    <button className='Project-button Source1'>Source</button>
+                    <a href={'https://chatbox-390df.web.app'} rel="noopener noreferrer" target='_blank'><button className='Project-button Access1'>Access</button></a>
+                    
+                    <a href={'https://github.com/sandeepkambham08/chat-app'} rel="noopener noreferrer" target='_blank'><button className='Project-button Source1'>Source</button></a>
                 </div>
                 <img src={chat_app_logo} className='Project-logo  Margin-right hide' style={{borderRadius:'25vh'}} id='project1logo' alt='chat-app-logo' />
             </div>
@@ -62,15 +63,15 @@ const Projects_list = (props) => {
                 <div className='Margin-right hide' id='project2details'>
                     <p className='Project-title'>Vibe check</p>
                     <p className='Project-description'>This is an iOS application which can used to check the vibe of a location by viewing recently uploaded pictures. User can take a snap in the app and upload it to vibe of the nearby location.</p>
-                    <button className='Project-button project-2-button '>Source</button>
+                    <a href={'https://github.com/sandeepkambham08/vibe_check'} rel="noopener noreferrer" target='_blank'><button className='Project-button project-2-button '>Source</button></a>
                 </div>
             </div>
             <div className='Project project3 section' id='Project'>
                 <div className='Margin-left hide' id='project3details'>
                     <p className='Project-title'>Shopping</p>
                     <p className='Project-description'>This is a shopping website where user can browse through various categories of products add them to the cart and checkout by making a payment and receive a confirmation email.</p>
-                    <button className='Access3 Project-button'>Access</button>
-                    <button className='Project-button project-3-button'>Source</button>
+                    <a href={'https://shopping-site-1.web.app/'} rel="noopener noreferrer" target='_blank'> <button className='Access3 Project-button'>Access</button></a>
+                    <a href={'https://github.com/sandeepkambham08/shopping'} rel="noopener noreferrer" target='_blank'><button className='Project-button project-3-button'>Source</button></a>
                 </div>
                 <img src={shopping_logo} className='Project-logo  Margin-right hide' id='project3logo' alt='chat-app-logo' />
 
