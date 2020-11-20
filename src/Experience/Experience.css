@@ -1,7 +1,89 @@
 .Experience{
-    height: 70vh;
-    background-color: rgb(250, 187, 164);
+    min-height: fit-content;
+    min-height: 70vh;
+    background-color: rgb(204, 225, 252);
     border-radius: 1em;
     overflow: hidden;
+    margin: 2vh 0 0 0;
+    padding-bottom: 5vh;
 }
 
+.Experience-title{
+    background-color: rgba(147, 204, 241, 0.329);
+    padding: 0.1em 1em;
+    border-radius: 0.4em;
+    /* filter:blur(1px); */
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.Experiences{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .Experience-item{
+    display: flex;
+    flex-direction: row;
+} */
+
+tr{
+    text-align: left;
+}
+.Experience-table{
+    width: 40vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.Company-name{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 15vw;
+}
+.Company-logo{
+    width: 10vw;
+    /* padding-top: 10px; */
+    align-items: baseline;
+}
+
+.job-role{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.Worked-years{
+color: slategrey;
+}
+
+.job-description{
+    color: rgb(255, 255, 255); 
+    /* background-color: rgb(255, 255, 255); */
+    background: linear-gradient(-200deg, #94c3e0,#32a6ee, #32a6ee,#fff3f3);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 4px 4px 10px 3px rgb(187, 187, 187);
+}
+
+.job-location{
+    color: teal;
+    padding: 0.5em;
+}
+
+
+@media(max-width:500px){
+    .Experience-table{
+        width: 80vw;
+    }
+    .Company-logo{
+        width: 30vw;
+        align-items: baseline;
+    }
+
+}
+
+@media(max-width:1500px){
+    .Experience-table{
+        width: 50vw;
+    }
+}

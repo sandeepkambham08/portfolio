@@ -55,7 +55,7 @@ const Projects_list = (props) => {
                     <button className='Project-button Access1'>Access</button>
                     <button className='Project-button Source1'>Source</button>
                 </div>
-                <img src={chat_app_logo} className='Project-logo  Margin-right hide' id='project1logo' alt='chat-app-logo' />
+                <img src={chat_app_logo} className='Project-logo  Margin-right hide' style={{borderRadius:'25vh'}} id='project1logo' alt='chat-app-logo' />
             </div>
             <div className='Project project2 section' id='Project'>
                 <img src={vibe_check_logo} className='Project-logo  Margin-left hide' id='project2logo' alt='chat-app-logo' />

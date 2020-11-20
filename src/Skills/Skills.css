@@ -1,16 +1,58 @@
 .Skills{
     height: fit-content;
     margin: 2vh 0 0 0;
+   
+    border-radius: 20px;
+    background-color: rgb(252, 244, 203);
+    padding: 1vh 15vw;
+    /* filter:blur(40px); */
+    transition: filter 0.4s ease-in;
+}
+
+.Skills-title{
+    color:rgb(43, 43, 43);
+    background-color: rgba(104, 107, 110, 0.103);
+    border-radius: 1em;
+    padding: 0.1em 1em;
+    width: fit-content;
+    margin: auto;
+}
+
+.divide{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-radius: 20px;
-    background-color: rgb(252, 244, 203);
-    padding: 5vh 15vw;
 }
+
+
+/* .Skills:hover{
+    filter:blur(0px);
+} */
 
 .Learning-skill{
     color: rgb(123, 125, 126);
+}
+
+.Skills-icon{
+position: absolute;
+width: 20vw;
+top: auto;
+left: 40vw;
+z-index: 50;
+opacity: 0.3;
+}
+#Skills p{
+    opacity: 0;
+}
+
+@media(max-width:500px){
+    .Skills-icon{
+        width: 100vw;
+        padding-top: 100px;
+        top: auto;
+        left: 0;
+        opacity: 0.15;
+        }
 }
