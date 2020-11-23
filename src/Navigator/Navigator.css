@@ -34,12 +34,6 @@
 
 @media (max-width:500px){
     .Navigator{
-        margin-left: 1vw;
-        /* padding: 1em; */
-        position: fixed !important;
-        top: 40vh;
-        border-radius: 1em !important;
-        overflow: hidden;
         display: none;
     }
     .Navigator nav{
@@ -51,5 +45,30 @@
         cursor: pointer;
         overflow: visible;
         /* border: 1px solid white; */
+    }
+}
+
+/* Iphone x */
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .Navigator{
+        display: none;
+    }
+  }
+
+/* Iphone 5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .Navigator{
+        display: none;
     }
 }

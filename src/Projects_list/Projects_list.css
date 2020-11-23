@@ -16,6 +16,7 @@
 .Project{
     /* background-color: rgb(146, 91, 91); */
     height: 70vh;
+    min-height: fit-content;
     margin: 2vh 0 0 0;
     display: flex;
     flex-direction: row;
@@ -161,6 +162,11 @@
       filter:blur(0px)
     }
   }
+  @-moz-document url-prefix() {
+    .Project-logo{
+        filter:blur(0px);
+    }
+  }  
 
 @media (max-width:500px){
     .Projects-list{
@@ -171,6 +177,7 @@
     .Project{
         /* background-color: rgb(146, 91, 91); */
         height: 65vh;
+        min-height: max-content;
         margin: 2vh 0 0 0;
         display: flex;
         flex-direction: row;
@@ -201,5 +208,118 @@
     
     .Margin-right{
         margin-right: 0vw;
+    }
+}
+
+/* Iphone x */
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .Project-title{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    
+    .Project-description{
+        font-size: 0.8em;
+        max-width: 50vw;
+    }
+
+    #Skills p{
+        opacity: 1;
+    }
+
+}
+
+/* Potrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .Project-logo{
+        /* display: none !important; */
+        width: 45vw !important;
+        border-radius: 60px ;
+        box-shadow: -5px 10px 10px 5px rgba(0,0,0,0.5);
+    }
+
+}
+
+
+/* iPad  */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .Project-title{
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .Project-description{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .Project-logo{
+        width: 40vw;
+        border-radius: 60px;
+        box-shadow: -5px 10px 10px 5px rgba(0,0,0,0.5);
+    }
+}
+
+/* Iphone 5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    
+    .Project-title{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    .Project-description{
+        font-size: 0.7em;
+        max-width: 50vw;
+    }
+    .Project-logo{
+        width: 20vw;
+        border-radius: 20px;
+        box-shadow: -5px 10px 10px 5px rgba(0,0,0,0.5);
+    }
+}
+/* Iphone 5 portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    
+    .Project-title{
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    .Project-description{
+        font-size: 1em;
+        max-width: 80vw;
+    }
+    .Project-logo{
+        width: 30vw;
+        border-radius: 20px;
+        box-shadow: -5px 10px 10px 5px rgba(0,0,0,0.5);
     }
 }

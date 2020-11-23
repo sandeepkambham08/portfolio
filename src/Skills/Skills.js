@@ -10,7 +10,7 @@ const Skills = () => {
         <div className='Skills section' id='Skills'>
             <h1 className='Skills-title' >Skills</h1>   
             {/* <img className="Background" src={background}/> */}
-            <img className='Skills-icon' src={skills_icon}   />
+            {/* <img className='Skills-icon' src={skills_icon}   /> */}
             <div className='divide'>
                 {/* <h1>Skills</h1> */}
                 <div>

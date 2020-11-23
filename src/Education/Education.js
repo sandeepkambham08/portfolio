@@ -8,7 +8,7 @@ const Education = () => {
         <div className='Education-block section' id='Education'>
             <div className='Education-title'>
                 <img src={education} className='Education-icon' alt='edu icon' />
-                <h2 style={{ paddingLeft: '10px', color: "grey" }}>Education</h2>
+                <h2 style={{ paddingLeft: '10px', color: "white" }}>Education</h2>
             </div>
             <div className='Education-list'>
                 <div>

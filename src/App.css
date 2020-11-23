@@ -7,11 +7,43 @@ html{
   font-family: 'Syne', sans-serif !important ;
   width: 100vw;
   overflow-x: hidden;
+  
   --load-time:300ms;
   --load-time1:calc(var(--load-time)*2);
   --load-time2:calc(var(--load-time)*3);
   --load-time3:calc(var(--load-time)*4);
 }
+
+/* .Page-border{
+  z-index: 800;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 20px soild black;
+} */
+
+#top, #bottom, #left, #right {
+  background: rgb(29, 54, 27);
+  /* border-radius: 10px; */
+  /* box-shadow: 2px 2px 10px 1px rgb(231, 231, 231); */
+  position: fixed;
+  z-index: 900 !important;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
 .App-header{
   background-color: #656666d3;
   z-index: 500;
@@ -67,8 +99,8 @@ html{
   align-content: space-around;
   /* border-radius: 0px 0px 20px 20px; */
 
-  background: linear-gradient(200deg, #94c3e0, #0868a3,#0a0a0a);
-  background-size: 400% 400%;
+  background: linear-gradient(-300deg, #b05ce7, #32a9f3,#8ebaf3);
+  background-size: 200% 200%;
 
   -webkit-animation: AnimationName 15s ease infinite;
   -moz-animation: AnimationName 15s ease infinite;
@@ -267,12 +299,14 @@ a{
 @keyframes scale-in{
   0%{
     transform: scale(0.1);  
+    filter: blur(10px);
   }
   90%{
     transform: scale(1.1); 
   }
   100%{
-    transform: scale(1);  
+    transform: scale(1); 
+    filter: blur(0px); 
   }
 }
 
@@ -431,3 +465,55 @@ a{
   }
  
 } 
+
+
+/* Iphone x */
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+    .My-description p{
+      font-size: 1em;
+      font-weight: bolder; 
+    }
+    .Sandeep-logo-div{
+      margin-left: 3vw;
+    }
+    .logos{
+      width: 60px !important;
+    }
+    .Resume-logo{
+      min-width: 110px;
+      padding:0.5em 1.5em;
+      font-size: 1em;
+    }
+}
+
+/* Iphone 5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    
+    .My-description p{
+      font-size: 1em;
+      font-weight: bolder; 
+    }
+    .Sandeep-logo-div{
+      margin-left: 3vw;
+    }
+    .logos{
+      width: 60px !important;
+    }
+    .Resume-logo{
+      min-width: 110px;
+      padding:0.5em 1.5em;
+      font-size: 1em;
+    }
+}

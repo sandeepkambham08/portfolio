@@ -1,7 +1,9 @@
 .Experience{
     min-height: fit-content;
     min-height: 70vh;
-    background-color: rgb(204, 225, 252);
+    /* background-color: rgb(204, 225, 252); */
+    background-image: radial-gradient( circle farthest-corner at -0.1% 1.8%,  rgba(255,184,129,0.34) 0%, rgba(255,77,77,0.7) 100.2%);
+    
     border-radius: 1em;
     overflow: hidden;
     margin: 2vh 0 0 0;
@@ -58,12 +60,15 @@ color: slategrey;
 }
 
 .job-description{
-    color: rgb(255, 255, 255); 
+    color: rgb(61, 61, 61); 
     /* background-color: rgb(255, 255, 255); */
     background: linear-gradient(-200deg, #94c3e0,#32a6ee, #32a6ee,#fff3f3);
+    background-image: radial-gradient( circle farthest-corner at 53.9% 53.1%,  rgba(250,98,95,1) 0%, rgba(150,60,58,1) 100.2% );
+    background-image: radial-gradient( circle farthest-corner at 5.7% 14.9%,  rgba(239,229,171,1) 0%, rgba(127,199,178,1) 48.7% );
     padding: 1em;
     border-radius: 1em;
-    box-shadow: 4px 4px 10px 3px rgb(187, 187, 187);
+    font-size: 1.2em;
+    box-shadow: 4px 4px 10px 3px rgba(109, 78, 12, 0.425);
 }
 
 .job-location{
@@ -82,6 +87,7 @@ color: slategrey;
     }
     .job-description{
         min-width: 60vw;
+        font-size: 1em;
     }
     table{
         margin: 10px !important;
