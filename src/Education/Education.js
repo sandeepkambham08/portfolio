@@ -1,16 +1,22 @@
 import React from 'react';
 import './Education.css';
-import education from '../media/education_icon.png'
-
+import education from '../media/education_icon.png';
+import Education_picture from '../media/Education_picture1.jpg';
 
 const Education = () => {
     return (
         <div className='Education-block section' id='Education'>
+            <div className='Education-pic-details'>
+            <div>
+                <img src={Education_picture} alt="Education_picture" className="Education-picture"/>
+            </div>
+            <div className='Background-blur'>
+            </div>
+            <div className='Education-list'>
             <div className='Education-title'>
                 <img src={education} className='Education-icon' alt='edu icon' />
                 <h2 style={{ paddingLeft: '10px', color: "white" }}>Education</h2>
             </div>
-            <div className='Education-list'>
                 <div>
                     <h3 className='Degree' > Master of Engineering in Computer Engineering, 2020 </h3>
                     <p className='College'>Concordia University, Montreal, Canada</p>
@@ -31,6 +37,8 @@ const Education = () => {
                 </div>
 
             </div>
+            </div>
+            
         </div>
     )
 }

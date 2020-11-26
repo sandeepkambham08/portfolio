@@ -87,6 +87,7 @@ html{
 
 .Initial-page{
   min-height: fit-content;
+  border-radius: 0 0 1em 1em;
   min-height: 95vh;
   /* background-color: rgb(199, 127, 79); */
   /* background: rgb(180,96,58);
@@ -120,6 +121,7 @@ html{
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transform: scale(0.2);
+  /* filter:blur(10px) */
 }
 
 .Sandeep-logo{
@@ -409,7 +411,25 @@ a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 15s linear infinite forwards;
+  /* transform: skew(-10deg);
+  display: block;
+  float: left;
+  
+  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+  min-width: 10px;
+  min-height: 10px;
+  color: #f16c1f !important;
+  position: relative; */
 }
+.Hello{
+  opacity: 0;
+  animation: fade-in 400ms ease-in 900ms forwards ;
+}
+.Front-end-developer{
+  opacity: 0;
+  animation: fade-in 400ms ease-in 4s forwards ;
+}
+
 @keyframes shine {
   to {
     background-position: 200% center;
@@ -515,5 +535,14 @@ a{
       min-width: 110px;
       padding:0.5em 1.5em;
       font-size: 1em;
+      color: yell;
     }
 }
+
+
+
+
+
+
+
+
