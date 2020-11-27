@@ -11,9 +11,9 @@
 }
 
 .Experience-title{
-    background-color: rgba(147, 204, 241, 0.329);
+    background-color: rgba(231, 162, 130, 0.164);
     padding: 0.1em 1em;
-    border-radius: 0.4em;
+    border-radius: 1.4em;
     /* filter:blur(1px); */
     width: fit-content;
     margin: 0 auto;
@@ -60,19 +60,21 @@ color: slategrey;
 }
 
 .job-description{
-    color: rgb(61, 61, 61); 
+    color: rgb(214, 214, 214); 
     /* background-color: rgb(255, 255, 255); */
-    background: linear-gradient(-200deg, #94c3e0,#32a6ee, #32a6ee,#fff3f3);
-    background-image: radial-gradient( circle farthest-corner at 53.9% 53.1%,  rgba(250,98,95,1) 0%, rgba(150,60,58,1) 100.2% );
-    background-image: radial-gradient( circle farthest-corner at 5.7% 14.9%,  rgba(239,229,171,1) 0%, rgba(127,199,178,1) 48.7% );
-    padding: 1em;
+    /* background: linear-gradient(-200deg, #94c3e0,#32a6ee, #32a6ee,#fff3f3); */
+    /* background-image: radial-gradient( circle farthest-corner at 53.9% 53.1%,  rgba(250,98,95,1) 0%, rgba(150,60,58,1) 100.2% ); */
+    /* background-image: radial-gradient( circle farthest-corner at 5.7% 14.9%,  rgba(239,229,171,1) 0%, rgba(127,199,178,1) 48.7% ); */
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 1.2em 1em;
     border-radius: 1em;
     font-size: 1.2em;
-    box-shadow: 4px 4px 10px 3px rgba(109, 78, 12, 0.425);
+    box-shadow: 4px 4px 10px 3px rgba(90, 90, 88, 0.425);
 }
 
 .job-location{
-    color: teal;
+    color: rgb(1, 122, 106);
     padding: 0.5em;
 }
 
