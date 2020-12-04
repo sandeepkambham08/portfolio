@@ -142,14 +142,14 @@ html{
   width: 5vw;
   border-radius: 3em;
   position: fixed;
-  margin-left: 48vw;
+  margin-left: 80vw;
   /* animation-name: scale-in-background;
   animation-duration: 100ms;
   animation-delay: var(--load-time1);
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transform: scale(0); */
-  opacity: 0.3 !important;
+  opacity: 0.2 !important;
 }
 
 .react-logo{

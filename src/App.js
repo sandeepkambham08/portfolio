@@ -11,18 +11,28 @@ import "./App.css";
 
 // Import componenets //
 import Navigator from "./Navigator/Navigator.js";
-import Projects_list from "./Projects_list/Projects_list.js";
-import Contact_form from "./Contact_form/Contact_form.js";
+import ProjectsList from "./Projects_list/Projects_list.js";
+import ContactForm from "./Contact_form/Contact_form.js";
 import Skills from "./Skills/Skills.js";
 import Education from "./Education/Education.js";
 import Experience from "./Experience/Experience.js";
 
 import resume from "./media/Sandeep_kambham_Front_end_Developer.pdf";
 
-import Sandeep_animation from "./Sandeep_animation/Sandeep_animation.js";
+import SandeepAnimation from "./Sandeep_animation/Sandeep_animation.js";
 
-let scrollDirection = 0; // To detect scroll direction
+// let scrollDirection = 0; // To detect scroll direction
 let scrollPercentage; // Amount the view is scrolled
+
+// const url = "https://jsonplaceholder.typicode.com/posts";
+// fetch(url,'POST')
+// .then( data=>{
+//   console.log(data);
+//   return data.json()})
+// .then(res=>{
+//   console.log("Hello")
+//   console.log(res)
+// });
 
 class App extends Component {
   render() {
@@ -79,16 +89,16 @@ class App extends Component {
             </div>
             <div className="My-description">
               <p className="linear-wipe" style={{marginBottom:'0px'}}>
-                Hello! I'm
+                Hello! I'm</p>
                 {/* <span className="sandeep">Sandeep.</span> */}
-                <Sandeep_animation 
+                <SandeepAnimation 
                 width="200px" 
                 height="70px" 
                 stroke_size='6'
                 stroke_color1="white"
                 stroke_color2="black"
                 />
-              </p>
+              
               <p className="linear-wipe" style={{marginTop:'0px'}}>
                 I am a FRONT-END DEVELOPER who love to develop wide range of
                 applications with simple and clean UI.
@@ -123,11 +133,11 @@ class App extends Component {
             </div>
           </div>
 
-          <Projects_list scrollPercentage={scrollPercentage} />
+          <ProjectsList scrollPercentage={scrollPercentage} />
           <Education />
           <Skills />
           <Experience />
-          <Contact_form />
+          <ContactForm />
         </div>
       </div>
     );

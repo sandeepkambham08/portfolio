@@ -4,8 +4,20 @@ import emailjs from 'emailjs-com';
 
 import linkedin_small  from '../media/linkedin_small.jpg'
 import mail from '../media/mail_icon.png';
+import construction from '../media/construction1.gif'
 
 // let error='';
+window.addEventListener('load', function () {
+    const countElement = document.getElementById('page-visits-count');
+    const countPageVisits = () =>{
+    fetch('https://api.countapi.xyz/update/sandeep-portfolio/visits/?amount=1')
+    .then(result=>result.json())
+    .then(result=>countElement.innerHTML=result.value);
+    // document.getElementById('page-visits-count').innerHTML=1;
+    }
+
+     countPageVisits();
+  })
 
 const onSend = () =>{
     document.getElementById('error').innerHTML=""
@@ -40,8 +52,7 @@ const onSend = () =>{
             
             );
             
-    }
-    
+    } 
 }
 
 const Contact_form = () => {
@@ -75,6 +86,16 @@ const Contact_form = () => {
           </form>
           <p id='error' className='error'></p>
           <button className='Submit-button' onClick={()=>{onSend()}}>SEND</button>
+          <br></br>
+          <div className='Extra'>
+          <div className="Visit-counter">
+            <p className='page-visits' >Page visits :<span className='page-visits-count' id="page-visits-count"></span></p>
+          </div>
+          <div className='Check-back'> 
+           <img src={construction} alt="Construction_gif" className="construction"/>
+           <p>This website is always under improvement, please visit later to see updates</p>
+          </div>
+          </div>
         </div>
     )
 }
