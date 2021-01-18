@@ -17,7 +17,7 @@ import Skills from "./Skills/Skills.js";
 import Education from "./Education/Education.js";
 import Experience from "./Experience/Experience.js";
 
-import resume from "./media/Sandeep_kambham_Front_end_Developer.pdf";
+import resume from "./media/Sandeep_Kambham_Resume.pdf";
 
 import SandeepAnimation from "./Sandeep_animation/Sandeep_animation.js";
 

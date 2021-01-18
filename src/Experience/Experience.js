@@ -1,6 +1,7 @@
 import './Experience.css';
 import Amazon_logo from '../media/Amazon-logo.png';
-import Techm_logo from '../media/Techm-logo.png'
+import Techm_logo from '../media/Techm-logo.png';
+import Wepeoples_logo from '../media/Wepeoples_logo.png';
 
 const Experience = () => {
     return (
@@ -24,7 +25,26 @@ const Experience = () => {
                         {/* <td className='Company-name'>Amazon</td> */}
                         {/* <td ><img className='Company-logo' src={Amazon_logo}/></td> */}
                         <td></td>
-                        <td className='job-role'>Analyst/Developer</td>
+                        <td className='job-role'>Front end Engineer</td>
+                    </tr>        
+                    <tr>
+                        <td className='Worked-years'>
+                            <img className='Company-logo' src={Wepeoples_logo} alt='Wepeoples logo'/>
+                            <p>Aug 2018 - May 2019</p>
+                        </td>
+                        <td className='job-description'>
+                        Developed multiple UI components which include posts, comments and replies to an issue created. 
+                        Created page navigation using react router and user authentication using google OAuth. 
+                        Worked closely with the backend and UX teams for developing responsive user interfaces. 
+                        Actively involved in the team Stand-ups, retrospective, code reviews and created user stories on JIRA.  
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        {/* <td className='Company-name'>Amazon</td> */}
+                        {/* <td ><img className='Company-logo' src={Amazon_logo}/></td> */}
+                        <td></td>
+                        <td className='job-role'>DevOps Engineer</td>
                     </tr>        
                     <tr>
                         <td className='Worked-years'>
@@ -32,7 +52,7 @@ const Experience = () => {
                             <p>May 2017 - Aug 2018</p>
                         </td>
                         <td className='job-description'>
-                            I have created userscripts using JavaScript to improve efficiency. 
+                            I have created user scripts using JavaScript to improve efficiency. 
                             I have developed an add-on form on the website to perform multiple manual updates on a single click,
                             this reduced the action time for working on a task by 25%.
                             I was as a key person in migrating an online ticket tracker system front-end,

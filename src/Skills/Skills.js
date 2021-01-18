@@ -19,23 +19,24 @@ const Skills = () => {
                         <p>JavaScript</p>
                         <p>HTML5</p>
                         <p>CSS</p>
+                        <p>TypeScript</p>
                     </div>
                     <div>
                     <h2>Frameworks</h2>
-                    
                         <p>React</p>
                         <p>React-Native (basic)</p>
+                        <p>GatsbyJS</p>
                     </div>
                     <div>
                     <h2>Libraries</h2>
                     
                         <p>Redux</p>
-                        <p className='Learning-skill'>Jquery</p>
-                        <p className='Learning-skill'>Bootstrap</p>
+                        <p>Jquery</p>
+                        <p>Bootstrap</p>
                     </div>
                     <div>
                     <h2>Related</h2>
-                    
+                        <p>GraphQL</p>
                         <p>AJAX</p>
                         <p>React-router</p>
                         <p>REST API's</p>
