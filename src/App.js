@@ -38,7 +38,7 @@ class App extends Component {
             <div className="Sandeep-logo-div justify-center sm:col-span-3 xl:col-span-1">
               <img src={logo} alt="Sandeep_logo" className="Sandeep-logo justify-center" />
             </div>
-            <div className="My-description max-w-lg justify-center sm:col-span-2 xl:col-span-1 gap-4">
+            <div className="My-description grid font-bold text-xl md:text-3xl max-w-lg justify-center sm:col-span-2 xl:col-span-1 gap-4">
               <p className="linear-wipe" style={{marginBottom:'0px'}}> Hello! I'm</p>
               <SandeepAnimation
                 width="200px" 
