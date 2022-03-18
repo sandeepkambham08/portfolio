@@ -33,23 +33,6 @@ html{
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
-.App-header{
-  background-color: #656666d3;
-  z-index: 500;
-  height: 7vh;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(229, 226, 226);
-  animation: drop-down 0.4s ease-in-out forwards;
-  opacity: 0;
-  transform: translateY(-100%);
-}
-
 .hide{
   background-color: #656666;
   height: 7vh;
@@ -66,20 +49,11 @@ html{
   transform: translateY(0%);
 }
 
-.App-body{
-  /* background-color: #ecb430; */
-  /* padding-top: 10vh; */
-  min-height: 400vh;
-  /* position: relative; */
-}
 
 .Initial-page{
   min-height: fit-content;
   border-radius: 0 0 1em 1em;
   min-height: 95vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
   align-content: space-around;
   background: linear-gradient(-300deg, #b05ce7, #32a9f3,#8ebaf3);
@@ -95,7 +69,6 @@ html{
 }
 
 .Sandeep-logo-div{
-  margin-left: 13vw;
   animation-name: scale-in;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
@@ -133,7 +106,6 @@ html{
 }
 
 .My-description{
-  max-width: 25vw;
   padding: 0 2vw;
 }
 
@@ -151,6 +123,7 @@ html{
 }
 
 .logos{
+  width: 200px;
   transition: box-shadow 300ms ease-in;
   animation-name: scale-in;
   animation-duration: var(--load-time);
@@ -166,7 +139,6 @@ html{
 }
 
 .Linkedin-logo{
-  width: 100px;
   padding:0 3em;
   border-radius: 10em ;
   z-index: 100;
@@ -176,10 +148,9 @@ html{
 
 
 .Github-logo{
-  width: 100px;
-  padding:0.5em 3em;
+  padding:0.6em 3em;
   border-radius: 10em ;
-  margin-top: 1em;
+  margin: 1em 0em;
   z-index: 80;
   background-color: rgb(255, 255, 255);
   animation-duration: 300ms;
@@ -187,7 +158,6 @@ html{
 }
 
 .Resume-logo{
-  min-width: 100px;
   padding:0.5em 0em;
   font-size: 1.5em;
   font-weight: bolder;
@@ -316,8 +286,6 @@ a{
   }
 }
 
-
-
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 90%}
   50%{background-position:80% 2%}
@@ -386,7 +354,6 @@ a{
     margin-top: 8vh;
     margin-right: 15vw;
     border-radius: 1em;
-   
   }
 
   .My-description{

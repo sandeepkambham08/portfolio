@@ -4,7 +4,7 @@ import $ from 'jquery';
 
 const Navigator = () => {
   return (
-    <div className='Navigator' id='Navigator' >
+    <div className='Navigator invisible xl:visible' id='Navigator' >
       <a href='#About'><nav id='About-button'>About</nav></a>
       <a href='#Projects'><nav id='Project-button'>Projects</nav></a>
       <a href='#Education'><nav id='Education-button'>Education</nav></a>
@@ -14,24 +14,6 @@ const Navigator = () => {
     </div>
   )
 }
-// window.addEventListener('DOMContentLoaded', () => {
-//   const observer = new IntersectionObserver(entries=>{
-//     console.log(entries);
-//     entries.forEach(entry=>{
-//       console.log(entry.intersectionRatio);
-//       const id = entry.target.getAttribute('id');
-//     })
-//   })
-//   // document.querySelectorAll('Navigator').forEach((a) => {
-//   //   observer.observe(a);
-//   // });
-//   observer.observe(document.getElementById("About-button"));
-// });
-
-
-// })
-
-
 
 export default Navigator;
 
@@ -45,13 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const io = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      // console.log(`${entry.target.id} is in view ${entry.isIntersecting}  with a ratio of : ${entry.intersectionRatio}`)
-      if (entry.intersectionRatio > 0.8 && window.innerWidth > 500) {
+      if (entry.intersectionRatio >= 0.8 && window.innerWidth > 500) {
         let id = entry.target.id + '-button';
-        // console.log('current screen is ', entry.target.id)
         let Navigator = document.getElementById('Navigator');
         let allButtons = Navigator.getElementsByTagName('nav');
-        // console.log(allButtons.length);
         for (var i = 0; i < allButtons.length; i++) {
           allButtons[i].classList.remove('Active-button');
         }
@@ -70,10 +49,8 @@ window.addEventListener('DOMContentLoaded', () => {
       }
       if (entry.intersectionRatio > 0.25 && window.innerWidth < 500) {
         let id = entry.target.id + '-button';
-        // console.log('current screen is ', entry.target.id)
         let Navigator = document.getElementById('Navigator');
         let allButtons = Navigator.getElementsByTagName('nav');
-        // console.log(allButtons.length);
         for (var i = 0; i < allButtons.length; i++) {
           allButtons[i].classList.remove('Active-button');
         }

@@ -34,24 +34,19 @@ class App extends Component {
        
         <Navigator />
         <div className="App-body">
-          <div className="Initial-page section" id="About">
-            <div className="Sandeep-logo-div">
-              <img src={js_logo} alt="js_logo" className="js-logo" />
-              <img src={logo} alt="Sandeep_logo" className="Sandeep-logo" />
-              <img src={React_logo} alt="React_logo" className="react-logo" />
+          <div className="Initial-page xl:pl-60 section grid grid-flow-row sm:grid-rows-2 sm:grid-cols-3 xl:grid-rows-1 xl:grid-cols-3 xl:grid-flow-col justify-center justify-items-center" id="About">
+            <div className="Sandeep-logo-div justify-center sm:col-span-3 xl:col-span-1">
+              <img src={logo} alt="Sandeep_logo" className="Sandeep-logo justify-center" />
             </div>
-            <div className="My-description">
-              <p className="linear-wipe" style={{marginBottom:'0px'}}>
-                Hello! I'm</p>
-                {/* <span className="sandeep">Sandeep.</span> */}
-                <SandeepAnimation 
+            <div className="My-description max-w-lg justify-center sm:col-span-2 xl:col-span-1 gap-4">
+              <p className="linear-wipe" style={{marginBottom:'0px'}}> Hello! I'm</p>
+              <SandeepAnimation
                 width="200px" 
                 height="70px" 
                 stroke_size='6'
                 stroke_color1="white"
                 stroke_color2="black"
                 />
-              
               <p className="linear-wipe" style={{marginTop:'0px'}}>
                 I am a FRONT-END DEVELOPER who love to develop wide range of
                 applications with simple and clean UI.
@@ -85,7 +80,6 @@ class App extends Component {
               </a>
             </div>
           </div>
-
           <ProjectsList scrollPercentage={scrollPercentage} />
           <Education />
           <Skills />
