@@ -14,19 +14,8 @@ html{
   --load-time3:calc(var(--load-time)*4);
 }
 
-/* .Page-border{
-  z-index: 800;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  border: 20px soild black;
-} */
-
 #top, #bottom, #left, #right {
   background: rgb(29, 54, 27);
-  /* border-radius: 10px; */
-  /* box-shadow: 2px 2px 10px 1px rgb(231, 231, 231); */
   position: fixed;
   z-index: 900 !important;
 	}
@@ -56,7 +45,6 @@ html{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(229, 226, 226);
-  /* animation: fade-in 1s ease-in-out 100ms forwards; */
   animation: drop-down 0.4s ease-in-out forwards;
   opacity: 0;
   transform: translateY(-100%);
@@ -89,20 +77,13 @@ html{
   min-height: fit-content;
   border-radius: 0 0 1em 1em;
   min-height: 95vh;
-  /* background-color: rgb(199, 127, 79); */
-  /* background: rgb(180,96,58);
-  background: linear-gradient(135deg, rgba(180,96,58,1) 6%, rgba(252,176,69,1) 56%, rgba(255,255,255,1) 100%); */
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: space-around;
-  /* border-radius: 0px 0px 20px 20px; */
-
   background: linear-gradient(-300deg, #b05ce7, #32a9f3,#8ebaf3);
   background-size: 200% 200%;
-
   -webkit-animation: AnimationName 15s ease infinite;
   -moz-animation: AnimationName 15s ease infinite;
   animation: AnimationName 15s ease infinite;
@@ -115,40 +96,26 @@ html{
 
 .Sandeep-logo-div{
   margin-left: 13vw;
-  /* overflow: hidden; */
   animation-name: scale-in;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   transform: scale(0.2);
-  /* filter:blur(10px) */
 }
 
 .Sandeep-logo{
   width: 30vw;
   height: 30vw;
   object-fit: cover;
-  /* border: 1px solid black; */
-  /* box-shadow: 2px 2px 10px 1px rgb(46, 46, 46); */
-  /* height: 600px; */
   border-radius: 20em;
   border: 4px solid rgb(4, 83, 136);
   box-shadow: 2px 2px 10px 1px rgb(31, 31, 31);
-  /* transform: scale(1.5); */
-  /* object-fit: contain; */
-  /* overflow: hidden; */
 }
 .js-logo{
   width: 5vw;
   border-radius: 3em;
   position: fixed;
   margin-left: 80vw;
-  /* animation-name: scale-in-background;
-  animation-duration: 100ms;
-  animation-delay: var(--load-time1);
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  transform: scale(0); */
   opacity: 0.2 !important;
 }
 
@@ -175,11 +142,6 @@ html{
   font-weight: bolder;
   color: rgb(248, 248, 248);
   color: rgba(228, 223, 215, 0.959);
-  
-  /* background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  /* font-size: larger; */
 }
 
 .links-tab{
@@ -189,9 +151,7 @@ html{
 }
 
 .logos{
-  /* box-shadow: 2px 2px 10px 1px rgb(121, 121, 121); */
   transition: box-shadow 300ms ease-in;
-  /* animation: logos-animation 1s ease-in; */
   animation-name: scale-in;
   animation-duration: var(--load-time);
   animation-timing-function: ease-in-out;
@@ -201,37 +161,27 @@ html{
 
 .logos:hover{
   box-shadow: 2px 3px 10px 1px rgb(255, 255, 255);
-  /* border: 1px solid rgb(95, 95, 91); */
   cursor: pointer;
   animation-play-state: initial;
 }
 
 .Linkedin-logo{
   width: 100px;
-  /* height: 7em; */
   padding:0 3em;
   border-radius: 10em ;
   z-index: 100;
   background-color: rgb(255, 255, 255);
   animation-delay: var(--load-time1);
-  /* animation-name: linkedin-animation;
-  animation-delay: var(--load-time);
-  transform: translateX(-1000%); */
 }
 
 
 .Github-logo{
   width: 100px;
-  /* height: 40px; */
   padding:0.5em 3em;
   border-radius: 10em ;
   margin-top: 1em;
   z-index: 80;
   background-color: rgb(255, 255, 255);
-  /* animation-name: github-animation;
-  animation-duration: 300ms;
-  transform: translateX(-150%);
-  opacity: 0; */
   animation-duration: 300ms;
   animation-delay: var(--load-time2);
 }
@@ -245,10 +195,6 @@ html{
   animation-delay: var(--load-time1);
   background-color: rgb(255, 255, 255);
   color: black;
- /* animation-name: github-animation;
-  animation-duration: 300ms;
-  transform: translateX(-150%);
-  opacity: 0; */
   animation-delay: var(--load-time3);
 }
 .Resume-logo p{
@@ -273,9 +219,6 @@ a{
   0%{
     opacity:0%;  
   }
-  /* 40%{
-    opacity:40%;  
-  } */
   100%{
     opacity:90%;   
   }
@@ -360,18 +303,6 @@ a{
   }
 }
 
-/* @media (max-width:500px){
-  .App-body{
-    background-color: #181100;
-  }
-} */
-
-/* @media (orientation:landscape){
-  .App-body{
-    background-color: #e7dab5;
-  }
-} */
-
 .App-link {
   color: #61dafb;
 }
@@ -415,15 +346,6 @@ a{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 15s linear infinite forwards;
-  /* transform: skew(-10deg);
-  display: block;
-  float: left;
-  
-  text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
-  min-width: 10px;
-  min-height: 10px;
-  color: #f16c1f !important;
-  position: relative; */
 }
 .Hello{
   opacity: 0;
