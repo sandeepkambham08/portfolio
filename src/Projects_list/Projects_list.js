@@ -41,7 +41,7 @@ const Projects_list = (props) => {
       <div className="Project project1 section" id="Project">
         <div className="Margin-left hide" id="project1details">
           <p className="Project-title">Chat App</p>
-          <p className="Project-description">
+          <p className="Project-description w-80">
             This is an online video calling platform developed using webRTC
             technology and react. You can discover people online and make
             friends and have a video chat with them.
@@ -64,7 +64,7 @@ const Projects_list = (props) => {
         </div>
         <img
           src={chat_app_logo}
-          className="Project-logo  Margin-right hide"
+          className="Project-logo  Margin-right hide w-32 md:w-60 xl:w-80"
           style={{ borderRadius: '25vh' }}
           id="project1logo"
           alt="chat-app-logo"
@@ -73,13 +73,13 @@ const Projects_list = (props) => {
       <div className="Project project2 section" id="Project">
         <img
           src={vibe_check_logo}
-          className="Project-logo  Margin-left hide"
+          className="Project-logo Margin-left hide w-32 md:w-60 xl:w-80"
           id="project2logo"
           alt="chat-app-logo"
         />
         <div className="Margin-right hide" id="project2details">
           <p className="Project-title">Vibe check</p>
-          <p className="Project-description">
+          <p className="Project-description w-80">
             This is an iOS application which can used to check the vibe of a
             location by viewing recently uploaded pictures. User can take a snap
             in the app and upload it to vibe of the nearby location.
@@ -96,7 +96,7 @@ const Projects_list = (props) => {
       <div className="Project project3 section" id="Project">
         <div className="Margin-left hide" id="project3details">
           <p className="Project-title">Shopping</p>
-          <p className="Project-description">
+          <p className="Project-description w-80">
             This is a shopping website where user can browse through various
             categories of products add them to the cart and checkout by making a
             payment and receive a confirmation email.
@@ -119,7 +119,7 @@ const Projects_list = (props) => {
         </div>
         <img
           src={shopping_logo}
-          className="Project-logo  Margin-right hide"
+          className="Project-logo  Margin-right hide w-32 md:w-60 xl:w-80"
           id="project3logo"
           alt="chat-app-logo"
         />
