@@ -1,13 +1,11 @@
 import './Sandeep_animation.css';
 
 const logo  = document.querySelectorAll('Sandeep-name');
-console.log(logo);
-
 
 const Sandeep_animation = (props) =>{
     return (
-        <div>
-            <svg id="Sandeep-name" width={props.width} height={props.height} fill="red" viewBox="0 0 412 79" xmlns="http://www.w3.org/2000/svg">
+        <div className="w-48 text-center justify-self-center">
+            <svg id="Sandeep-name" fill="red" viewBox="0 0 412 79" xmlns="http://www.w3.org/2000/svg">
                 <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="-0.528015" y="0.223999" width="413" height="79" fill="none">
                   <rect fill="white" x="-0.528015" y="0.223999" width="413" height="79"/>
                 </mask>

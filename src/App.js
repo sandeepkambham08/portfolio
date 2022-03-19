@@ -24,25 +24,17 @@ import SandeepAnimation from "./Sandeep_animation/Sandeep_animation.js";
 let scrollPercentage; 
 class App extends Component {
   render() {
-    const sandeep_logo = document.querySelectorAll("#Sandeep-name path");
-    console.log(sandeep_logo);
-    for (let i = 0; i < sandeep_logo.length; i++) {
-      console.log(`Letter ${i}  is ${sandeep_logo[i].getTotalLength()}`);
-    }
     return (
       <div className="App">
-       
         <Navigator />
         <div className="App-body">
           <div className="Initial-page xl:pl-60 section grid grid-flow-row sm:grid-rows-2 sm:grid-cols-3 xl:grid-rows-1 xl:grid-cols-3 xl:grid-flow-col justify-center justify-items-center" id="About">
-            <div className="Sandeep-logo-div justify-center sm:col-span-3 xl:col-span-1">
-              <img src={logo} alt="Sandeep_logo" className="Sandeep-logo justify-center" />
+            <div className="Sandeep-logo-div p-1  justify-center sm:col-span-3 xl:col-span-1">
+              <img src={logo} alt="Sandeep_logo" className="Sandeep-logo w-80 rounded-2xl sm:rounded-full sm:w-96 sm:h-96 justify-center" />
             </div>
             <div className="My-description grid font-bold text-xl md:text-3xl max-w-lg justify-center sm:col-span-2 xl:col-span-1 gap-4">
               <p className="linear-wipe" style={{marginBottom:'0px'}}> Hello! I'm</p>
               <SandeepAnimation
-                width="200px" 
-                height="70px" 
                 stroke_size='6'
                 stroke_color1="white"
                 stroke_color2="black"
@@ -61,7 +53,7 @@ class App extends Component {
                 <img
                   src={linkedin_logo}
                   alt="linkedin_logo"
-                  className="Linkedin-logo logos"
+                  className="Linkedin-logo logos w-40 md:w-52"
                 />
               </a>
               <a
@@ -72,11 +64,11 @@ class App extends Component {
                 <img
                   src={Github_logo}
                   alt="Github_logo"
-                  className="Github-logo logos"
+                  className="Github-logo logos w-40 md:w-52"
                 />
               </a>
               <a href={resume} rel="noopener noreferrer" target="_blank">
-                <p className="Resume-logo logos">Resume</p>
+                <p className="Resume-logo py-1 logos w-40 md:w-52 md:py-2 md:text-2xl">Resume</p>
               </a>
             </div>
           </div>
