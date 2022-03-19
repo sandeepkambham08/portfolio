@@ -9,7 +9,7 @@ const Job_item = (props) => {
   }
 
   return (
-    <div className="w-3/4 lg:w-1/2 mx-auto grid grid-flow-row lg:grid-flow-col  lg:gap-4 pt-8">
+    <div className="w-3/4 lg:w-1/2 mx-auto grid grid-flow-row lg:grid-flow-col lg:gap-4 pt-8">
       <div className="grid content-center row-span-1">
         <img
           className="w-24 lg:w-32"
